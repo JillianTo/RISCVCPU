@@ -1,0 +1,125 @@
+# do CPU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/jto/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/ROM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/ROM.v 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/Regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/Regfile.v 
+# -- Compiling module Regfile
+# 
+# Top level modules:
+# 	Regfile
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/RAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/RAM.v 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/CU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v 
+# -- Compiling module CU
+# 
+# Top level modules:
+# 	CU
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU {/media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:31:50 on Dec 18,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU" /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v 
+# -- Compiling module CPU_tb
+# 
+# Top level modules:
+# 	CPU_tb
+# End time: 23:31:50 on Dec 18,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  CPU_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" CPU_tb 
+# Start time: 23:31:50 on Dec 18,2022
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.CU
+# Loading work.ROM
+# Loading work.Regfile
+# Loading work.RAM
+# Loading work.ALU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'zero'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'neg'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'oddParity'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'evenParity'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'overflow'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v Line: 11
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'zero'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu/alu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'neg'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu/alu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'oddParity'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu/alu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'evenParity'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu/alu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'overflow'. The port definition is at: /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/cpu/alu File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 39
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v(17)
+#    Time: 1 ns  Iteration: 0  Instance: /CPU_tb
+# Break in Module CPU_tb at /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v line 17
+# End time: 23:33:29 on Dec 18,2022, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 10

@@ -1,0 +1,60 @@
+module CPU (clk, regOut1, regOut2, aluOut, ramOut);
+	input clk;
+	
+	output wire[31:0] regOut1, regOut2, aluOut, ramOut;
+	reg[31:0] regDataIn, instr, aluOpA, aluOpB;
+	wire [31:0] pcOut;
+	wire[3:0] ALUop;
+	reg [31:0] addr;
+	wire[4:0] rs1, rs2, rd;
+	wire PCSel, ImmSel, RegWEn, BSel, BrUn, BrEq, BrLT, ASel, RegSel, MemRW, zero, neg, oddParity, evenParity, overflow;
+	reg ramEn, regRst;
+	reg [2:0] cycleCount;
+	reg[31:0] pcIn;
+
+	
+	// module CU (clk, instr, PCSel, ImmSel, RegWEn, BSel, BrUn, BrEq, BrLT, ASel, ALUop, RegSel, MemRW);
+	CU cu (clk, instr, PCSel, ImmSel, RegWEn, BSel, BrUn, BrEq, BrLT, ASel, ALUop, RegSel, MemRW);
+	// module ROM (clk, address, rs1, rs2, rd, imm, contentout);
+	ROM rom (clk, addr[7:0], rs1, rs2, rd, imm, instr);
+	// module Regfile (clk, rst, dataIn, rw, rd, rs1, rs2, out1, out2);
+	Regfile regFile (clk, rst, regDataIn, RegWEn, rd, rs1, rs2, regOut1, regOut2);
+	// module RAM (clk, dataIn, addr, en, rw, dataOut);
+	RAM ram (clk, aluOut, regOut2, ramEn, MemRW, ramOut);
+	// module ALU (opA, opB, opCode, result, zero, neg, oddParity, evenParity, overflow);
+	ALU alu (aluOpA, aluOpB, ALUop, aluOut, zero, neg, oddParity, evenParity, overflow);
+	PC pc (pcIn, pcOut);
+	
+	initial begin
+		pcIn <= 0;
+		cycleCount <= 0;
+		ramEn <= 1;
+		regRst <= 0;
+	end
+	
+	always @ (*) begin
+		
+		if (cycleCount == 4) begin
+			pcIn <= pcOut;
+		end
+		
+		if (PCSel == 0) addr <= pcIn;
+		else addr <= aluOut;
+		
+		if(RegSel == 0) regDataIn <= ramOut;
+		else regDataIn <= aluOut;
+		
+		if (ASel == 0) aluOpA <= regOut1;
+		else aluOpA <= pcIn;
+		
+		if (BSel == 0) aluOpB <= regOut2;
+		else aluOpB <= instr;
+		
+	end
+	
+	always @ (posedge clk) begin
+		if(cycleCount == 4) cycleCount <= 0;
+		else cycleCount <= cycleCount + 1;
+	end
+	
+endmodule

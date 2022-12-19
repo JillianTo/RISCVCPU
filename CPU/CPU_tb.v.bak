@@ -1,0 +1,6 @@
+module CPU_tb;
+	
+	reg clk;
+	wire 
+	// module CPU (clk, regOut1, regOut2, aluOut, ramOut);
+	

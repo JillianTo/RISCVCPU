@@ -1,0 +1,186 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/media/jto/SDXC/Fall2022/CompArc/CPU/simulation/modelsim
+vALU
+Z1 !s110 1671424310
+!i10b 1
+!s100 `RO<TVVjm5F_0V0j^g8;K2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]Ul`=QWI0FMfYWDhPU^500
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1671419230
+8/media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v
+!i122 5
+L0 1 31
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1671424310.000000
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/media/jto/SDXC/Fall2022/CompArc/CPU
+Z8 tCvgOpt 0
+n@a@l@u
+vCPU
+R1
+!i10b 1
+!s100 He1GVLF<Rc7TLWzQXLU<O1
+R2
+IY5@Gb5TjClgoE`noC=BAe1
+R3
+R0
+w1671424290
+8/media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v
+!i122 0
+L0 2 85
+R4
+r1
+!s85 0
+31
+R5
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v|
+!i113 1
+R6
+R7
+R8
+n@c@p@u
+vCPU_tb
+R1
+!i10b 1
+!s100 XoRJAAN>Z0zP?OVb2AI;Q1
+R2
+IghTPGj<BN2TDO2O4W0R3P0
+R3
+R0
+w1671423438
+8/media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v
+!i122 6
+L0 1 25
+R4
+r1
+!s85 0
+31
+R5
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v|
+!i113 1
+R6
+R7
+R8
+n@c@p@u_tb
+vCU
+R1
+!i10b 1
+!s100 keB9Og<An9;5jEO9Til4P0
+R2
+IX?^5^G<@lMiZUGO;=OBLo1
+R3
+R0
+w1671423435
+8/media/jto/SDXC/Fall2022/CompArc/CPU/CU.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/CU.v
+!i122 4
+L0 1 147
+R4
+r1
+!s85 0
+31
+R5
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/CU.v|
+!i113 1
+R6
+R7
+R8
+n@c@u
+vRAM
+R1
+!i10b 1
+!s100 e0h8J2Kd9DkjNf;9S9:YG1
+R2
+I4FRQ2j^:=6H?bd:0adig=0
+R3
+R0
+w1668723964
+8/media/jto/SDXC/Fall2022/CompArc/CPU/RAM.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/RAM.v
+!i122 3
+L0 1 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/RAM.v|
+!i113 1
+R6
+R7
+R8
+n@r@a@m
+vRegfile
+R1
+!i10b 1
+!s100 W2aALSz@ZWbKii<Q:`L^E2
+R2
+IFIR35lVg2Fi^[H1iNB5Oa2
+R3
+R0
+w1671424287
+8/media/jto/SDXC/Fall2022/CompArc/CPU/Regfile.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/Regfile.v
+!i122 2
+L0 1 35
+R4
+r1
+!s85 0
+31
+R5
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/Regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/Regfile.v|
+!i113 1
+R6
+R7
+R8
+n@regfile
+vROM
+R1
+!i10b 1
+!s100 1:ZNNLRncmfT]Mg6CZSK50
+R2
+IN`oZO40dE_g2D>7bQ98<I3
+R3
+R0
+w1671421059
+8/media/jto/SDXC/Fall2022/CompArc/CPU/ROM.v
+F/media/jto/SDXC/Fall2022/CompArc/CPU/ROM.v
+!i122 1
+L0 1 289
+R4
+r1
+!s85 0
+31
+R5
+!s107 /media/jto/SDXC/Fall2022/CompArc/CPU/ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/media/jto/SDXC/Fall2022/CompArc/CPU|/media/jto/SDXC/Fall2022/CompArc/CPU/ROM.v|
+!i113 1
+R6
+R7
+R8
+n@r@o@m
