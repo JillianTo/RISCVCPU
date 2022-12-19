@@ -96,12 +96,7 @@ module CU (clk, instr, PCSel, ImmSel, RegWEn, BSel, BrUn, BrEq, BrLT, ASel, ALUo
 				ASel <= 0;
 				RegSel <= 1;
 				
-				case(instr[14:12])
-					000: ALUop <= 4'b0000; // ADDI
-					100: ALUop <= 4'b0100; // XORI
-					110: ALUop <= 4'b0110; // ORI
-					111: ALUop <= 4'b0111; // ANDI
-				endcase
+				ALUop <= {1'b0,instr[14:12]};
 				
 				if(cycleCount == 4) RegWEn <= 1;
 				else RegWEn <= 0;
@@ -115,15 +110,9 @@ module CU (clk, instr, PCSel, ImmSel, RegWEn, BSel, BrUn, BrEq, BrLT, ASel, ALUo
 				ASel <= 0;
 				RegSel <= 1;
 				
-				case(instr[14:12])
-					000: begin 
-						if(instr[31:25] == 7'b0000000) ALUop <= 4'b0000; // ADD
-						else ALUop <= 4'b1000; // SUB
-					end
-					100: ALUop <= 4'b0100; // XOR
-					110: ALUop <= 4'b0110; // OR
-					111: ALUop <= 4'b0111; // AND
-				endcase
+				ALUop[2:0] <= instr[14:12];
+				if((instr[30] == 1) && (instr[14:12] == 3'b000)) ALUop[3] <= 1; // SUB
+				else ALUop[3] <= 0;
 				
 				if(cycleCount == 4) RegWEn <= 1;
 				else RegWEn <= 0;

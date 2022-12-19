@@ -2,6 +2,7 @@ module CPU_tb;
 	
 	reg clk;
 	wire [31:0] regOut1, regOut2, aluOut, ramOut, addr;
+	wire zero, neg, oddParity, evenParity, overflow;
 	wire [31:0] instr, regDataIn, aluOpA, aluOpB, pc;
 	wire [11:0] imm;
 	wire[4:0] rs1, rs2, rd;
@@ -13,7 +14,7 @@ module CPU_tb;
 	
 	initial begin
 		clk <= 1;
-		#1000
+		#1500
 		$stop;
 	end
 	

@@ -10,9 +10,9 @@ module Regfile (clk, rst, dataIn, rw, rd, rs1, rs2, out1, out2);
 	
 	reg [31:0] mem [0:31];
 	
-	initial begin
+	initial begin // initialize all regs with zero
 		for (i=0; i<32; i=i+1) begin
-				mem[i] <= 54;
+				mem[i] <= 0;
 			end
 	end
 	

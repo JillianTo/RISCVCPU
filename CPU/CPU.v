@@ -3,7 +3,8 @@ module CPU (clk, regOut1, regOut2, aluOut, zero, neg, oddParity, evenParity, ove
 
 	input clk;
 	
-	output wire[31:0] regOut1, regOut2, aluOut, zero, neg, oddParity, evenParity, overflow, ramOut;
+	output wire[31:0] regOut1, regOut2, aluOut, ramOut;
+	output wire zero, neg, oddParity, evenParity, overflow;
 	
 	output reg[31:0] addr;
 	
@@ -34,7 +35,7 @@ module CPU (clk, regOut1, regOut2, aluOut, zero, neg, oddParity, evenParity, ove
 	// module Regfile (clk, rst, dataIn, rw, rd, rs1, rs2, out1, out2);
 	Regfile regFile (clk, rst, regDataIn, RegWEn, rd, rs1, rs2, regOut1, regOut2);
 	// module RAM (clk, dataIn, addr, en, rw, dataOut);
-	RAM ram (clk, aluOut, regOut2, ramEn, MemRW, ramOut);
+	RAM ram (clk, regOut2, aluOut, ramEn, MemRW, ramOut);
 	// module ALU (opA, opB, opCode, result, zero, neg, oddParity, evenParity, overflow);
 	ALU alu (aluOpA, aluOpB, ALUop, aluOut, zero, neg, oddParity, evenParity, overflow);
 	//PC pc (pcIn, pcOut);
