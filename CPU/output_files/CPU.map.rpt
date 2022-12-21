@@ -1,5 +1,5 @@
 Analysis & Elaboration report for CPU
-Mon Dec 19 11:37:40 2022
+Tue Dec 20 19:00:05 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Dec 19 11:37:40 2022       ;
+; Analysis & Elaboration Status ; Successful - Tue Dec 20 19:00:05 2022       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; CPU                                         ;
 ; Top-level Entity Name         ; CPU                                         ;
@@ -147,7 +147,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Dec 19 11:37:33 2022
+    Info: Processing started: Tue Dec 20 18:59:58 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -165,30 +165,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
     Info (12023): Found entity 1: ALU File: /media/jto/SDXC/Fall2022/CompArc/CPU/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file CPU_tb.v
     Info (12023): Found entity 1: CPU_tb File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU_tb.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at CPU.v(36): created implicit net for "rst" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at CPU.v(33): created implicit net for "rst" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 33
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at CPU.v(45): truncated value with size 32 to match size of target (4) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 45
-Warning (10235): Verilog HDL Always Construct warning at CPU.v(72): variable "rs1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 72
-Warning (10235): Verilog HDL Always Construct warning at CPU.v(72): variable "rs2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 72
-Warning (10240): Verilog HDL Always Construct warning at CPU.v(50): inferring latch(es) for variable "BrEq", which holds its previous value in one or more paths through the always construct File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 50
-Warning (10230): Verilog HDL assignment warning at CPU.v(84): truncated value with size 32 to match size of target (4) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 84
-Info (10041): Inferred latch for "BrEq" at CPU.v(50) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 50
-Info (12128): Elaborating entity "CU" for hierarchy "CU:cu" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 32
+Warning (10230): Verilog HDL assignment warning at CPU.v(39): truncated value with size 32 to match size of target (4) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 39
+Warning (10235): Verilog HDL Always Construct warning at CPU.v(67): variable "rs1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 67
+Warning (10235): Verilog HDL Always Construct warning at CPU.v(67): variable "rs2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 67
+Warning (10240): Verilog HDL Always Construct warning at CPU.v(45): inferring latch(es) for variable "BrEq", which holds its previous value in one or more paths through the always construct File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 45
+Warning (10230): Verilog HDL assignment warning at CPU.v(80): truncated value with size 32 to match size of target (4) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 80
+Info (10041): Inferred latch for "BrEq" at CPU.v(45) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 45
+Info (12128): Elaborating entity "CU" for hierarchy "CU:cu" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 31
 Warning (10230): Verilog HDL assignment warning at CU.v(10): truncated value with size 32 to match size of target (4) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v Line: 10
 Warning (10230): Verilog HDL assignment warning at CU.v(15): truncated value with size 32 to match size of target (4) File: /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v Line: 15
 Warning (10199): Verilog HDL Case Statement warning at CU.v(39): case item expression never matches the case expression File: /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v Line: 39
 Warning (10199): Verilog HDL Case Statement warning at CU.v(45): case item expression never matches the case expression File: /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v Line: 45
 Warning (10199): Verilog HDL Case Statement warning at CU.v(51): case item expression never matches the case expression File: /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v Line: 51
 Warning (10199): Verilog HDL Case Statement warning at CU.v(57): case item expression never matches the case expression File: /media/jto/SDXC/Fall2022/CompArc/CPU/CU.v Line: 57
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 34
-Info (12128): Elaborating entity "Regfile" for hierarchy "Regfile:regFile" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 36
-Info (12128): Elaborating entity "RAM" for hierarchy "RAM:ram" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 38
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 32
+Info (12128): Elaborating entity "Regfile" for hierarchy "Regfile:regFile" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 33
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:ram" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 34
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "chip" into its bus
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 40
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: /media/jto/SDXC/Fall2022/CompArc/CPU/CPU.v Line: 35
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 741 megabytes
-    Info: Processing ended: Mon Dec 19 11:37:40 2022
+    Info: Peak virtual memory: 738 megabytes
+    Info: Processing ended: Tue Dec 20 19:00:05 2022
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 

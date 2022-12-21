@@ -20,7 +20,7 @@ module CU (clk, instr, PCSel, ImmSel, RegWEn, BSel, BrUn, BrEq, BrLT, ASel, ALUo
 				ImmSel <= 1;
 				BSel <= 1;
 				ASel <= 1;
-				ALUop <= 4'b0000;
+				ALUop <= 4'b1000;
 				RegWEn <= 0;
 				 
 				case(instr[14:12])

@@ -135,7 +135,7 @@ module ROM (clk, address, rs1, rs2, rd, imm, contentout);
 		rom[91] <= 8'b00000000;
 		
 		rom[92] <= 8'b01100011; // BEQ X1, X4, 92
-		rom[93] <= 8'b10000110;
+		rom[93] <= 8'b10001100;
 		rom[94] <= 8'b01000000;
 		rom[95] <= 8'b00001010;
 	
